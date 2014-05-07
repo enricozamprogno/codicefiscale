@@ -16,13 +16,13 @@
 
 /**
  * @package    profilefield
- * @subpackage text
- * @copyright  2007 onwards Shane Elliot {@link http://pukunui.com}
+ * @subpackage codicefiscale
+ * @copyright  2014 onwards Enrico Zamprogno
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2013032700;        // The current plugin version (Date: YYYYMMDDXX)
-$plugin->requires  = 2012112900;        // Requires this Moodle version
+$plugin->version   = 2014050700;        // The current plugin version (Date: YYYYMMDDXX)
+$plugin->requires  = 2013111802;        // Written for Moodle 2.6
 $plugin->component = 'profilefield_codicefiscale'; // Full name of the plugin (used for diagnostics)
