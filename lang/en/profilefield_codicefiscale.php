@@ -23,9 +23,9 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['label'] = 'Codice Fiscale';
+$string['label'] = 'Italian Fiscal Code';
 $string['pluginname'] = 'Codice Fiscale';
-$string['cf_novalue'] = 'cf mancante';
-$string['cf_valuestrlen'] = 'lunghezza errata';
-$string['cf_valuestrchar'] = 'caratteri non previsti';
-$string['cf_valuestrctrl'] = 'errore nel codice di controllo';
+$string['cf_novalue'] = 'Fiscal Code missing';
+$string['cf_valuestrlen'] = 'Wrong Length [only 16 char]';
+$string['cf_valuestrchar'] = 'Wrong characters [only A-Z0-9]';
+$string['cf_valuestrctrl'] = "Control code doesn\'t match";
