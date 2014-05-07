@@ -1,6 +1,8 @@
 <?php
 
-include 'controlla_cf.php' ;
+/* something here for security ?*/
+
+include 'controlla_cf.php' ; 
 
 class profile_field_codicefiscale extends profile_field_base {
 
