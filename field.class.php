@@ -1,6 +1,5 @@
 <?php
 
-/* something here for security ?*/
 
 include 'controlla_cf.php' ; 
 

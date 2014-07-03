@@ -1,6 +1,5 @@
 <?php
 
-/* something here to protect the code from non Moodle access */
 
 /**
  * Controlla codice fiscale.
