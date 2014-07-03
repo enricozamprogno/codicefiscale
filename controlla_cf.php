@@ -2,8 +2,6 @@
 
 /* something here to protect the code from non Moodle access */
 
-include 'listacomuni.php'; /* static table for birth city name codes */
-
 /**
  * Controlla codice fiscale.
  * @author Umberto Salsi <salsi@icosaedro.it>
@@ -82,45 +80,5 @@ function ControllaCF($cf)
 	if( chr($s%26 + ord('A')) != $cf[15] )
 		return 4;
 	return 0;
-}
-
-/* Codice di test:
-if( ControllaCF("") !== "" )  throw new Exception();
-if( ControllaCF("abcdefghijklmnoz") !== "" )  throw new Exception();
-if( ControllaCF("xxxxxx12c34x567o") !== "" )  throw new Exception();
-if( ControllaCF("") !== "" )  throw new Exception();
-*/
-
-function decomponiCF($cf)
-{
-	global $tab_mesi, $comuni;
-	
-	$esito=array();
-	
-	$esito['cod_comune']=0;
-	$esito['comune']='';
-	$esito['anno_nascita']=0;
-	$esito['mese_nascita']=0;
-	$esito['giorno_nascita']=0;
-	$cf=strtoupper($cf);
-	
-	$esito['stato']=ControllaCF($cf);
-	if ($esito['stato']>0) {			/* il codice fiscale è sbagliato */
-		return $esito ;
-	}
-	$esito['anno_nascita']=0 + substr($cf, 6, 2);
-	$lettera_mese=substr($cf, 8, 1);
-	$esito['mese_nascita']= $tab_mesi[$lettera_mese];  
-	$esito['giorno_nascita']=substr($cf, 9, 2);
-	if ($esito['giorno_nascita'] > 40) {
-		$esito['sesso']='F';
-		$esito['giorno_nascita']-=40;
-	} else 
-		$esito['sesso']='M';
-		
-	$esito['cod_comune']=substr($cf,11,4);
-	$esito['comune']=$comuni[$esito['cod_comune']];
-
-	return $esito;
 }
 

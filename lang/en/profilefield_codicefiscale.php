@@ -29,3 +29,4 @@ $string['cf_novalue'] = 'Fiscal Code missing';
 $string['cf_valuestrlen'] = 'Wrong Length [only 16 char]';
 $string['cf_valuestrchar'] = 'Wrong characters [only A-Z0-9]';
 $string['cf_valuestrctrl'] = "Control code doesn\'t match";
+?>

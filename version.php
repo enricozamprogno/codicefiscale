@@ -23,6 +23,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2014050700;        // The current plugin version (Date: YYYYMMDDXX)
+$plugin->version   = 2014070300;        // The current plugin version (Date: YYYYMMDDXX)
 $plugin->requires  = 2013111802;        // Written for Moodle 2.6
 $plugin->component = 'profilefield_codicefiscale'; // Full name of the plugin (used for diagnostics)

@@ -29,3 +29,4 @@ $string['cf_novalue'] = 'cf mancante';
 $string['cf_valuestrlen'] = 'lunghezza errata';
 $string['cf_valuestrchar'] = 'caratteri non previsti';
 $string['cf_valuestrctrl'] = 'errore nel codice di controllo';
+?>
