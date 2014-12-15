@@ -14,7 +14,7 @@ class profile_field_codicefiscale extends profile_field_base {
 
 	function edit_field_add($mform) {
 	/// Create the form field
-		$mform->addElement('text', $this->inputname, format_string($this->field->name), 'maxlength="16" size="16" ');
+		$mform->addElement('text', $this->inputname, format_string($this->field->name), 'maxlength="16" size="16" style="width:16em" ');
 		$mform->setType($this->inputname, PARAM_TEXT);
 /*
 		if ($this->is_required() and !has_capability('moodle/user:update',  context_system::instance())) {
